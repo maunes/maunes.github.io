@@ -109,7 +109,7 @@ section#main-section {
 }
 
 section.skills.bio {
-    background-color: #6d00f7;
+    background-color: #274afa;
     color: #fff;
 }
 
@@ -226,7 +226,7 @@ section.skills .duo p.p {
 }
 
 .projects .project-grid .overlay {
-    background-color: #141c3a;
+    background-color: #274afad4;
 }
 
 section#contact-me .hire-me {
