@@ -173,6 +173,62 @@ section.skills .duo p.p {
     line-height: 1.6rem;
 }
 
+.projects .project-grid figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.projects .project-grid figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.projects .project-grid .overlay, 
+.projects .project-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .45s ease-in-out;
+}
+
+.projects .project-grid figure img.project-thumb {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: .25s ease-in-out;
+}
+
+.projects .project-grid figure figcaption h1.title {
+    color: #fff;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+}
+
+.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 1.2rem;
+    font-weight: 400;
+    border-width: 2px;
+    color: #fff;
+}
+
+.projects .project-grid figure:hover .overlay, 
+.projects .project-grid figure:hover figcaption {
+    opacity: 1;
+}
+
+.projects .project-grid .overlay {
+    background-color: #141c3a;
+}
+
 section#contact-me .hire-me {
     border-radius: 30px;
     background-color: #0a0e24;
@@ -226,3 +282,21 @@ footer.section .made-by-bulma small {
     color: #fff;
     opacity: .3;
 }
+
+@media screen and (min-width: 769px) {
+
+    .projects .project-grid {
+        padding-top: 4rem;
+    }
+    .navbar > .contain {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .navbar > .contain {
+        justify-content: center;
+    }
+}
+
