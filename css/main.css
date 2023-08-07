@@ -220,6 +220,12 @@ section.skills .duo p.p {
     color: #fff;
 }
 
+.projects .project-grid figure figcaption a.button.is-primary.is-outlined.is-rounded {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
 .projects .project-grid figure:hover .overlay, 
 .projects .project-grid figure:hover figcaption {
     opacity: 1;
