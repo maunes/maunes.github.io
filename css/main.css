@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    --scrollbarBG: #e0e0e0;
+    --thumbBG: #292929;
+    min-height: 110vh;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 0;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contain {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    max-width: 1080px;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.navbar {
+    padding: 1.2rem 0;
+}
+
+.navbar,
+h1, h2, h3, h4,
+section .button.is-primary {
+    font-family: 'Raleway', Geneva, Verdana, sans-serif;
+}
+
+.navbar > .contain {
+    align-items: stretch;
+    min-height: 40px;
+    width: 100%;
+}
+
+.button.is-primary,
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #274afa;
+    color: #274afa;
+}
+
+.button.is-primary.is-outlined.is-focused, 
+.button.is-primary.is-outlined.is-hovered, 
+.button.is-primary.is-outlined:focus, 
+.button.is-primary.is-outlined:hover {
+    background-color: #274afa;
+    border-color: #274afa;
+    color: #fff;
+}
+
+hr {
+    max-width: 570px;
+    margin: 1.5rem auto;
+}
+
+section#main-section {
+    height: calc(100vh - 200px);
+    background-image: url(https://www.thereactivedeveloper.com/assets/hero-devices.svg);
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+section.skills.bio {
+    background-color: #6d00f7;
+    color: #fff;
+}
+
+.hero-body {
+    justify-content: center;
+    text-align: center;
+}
+
+section.skills .duo figure {
+    /* border-radius: 50%; */
+    overflow: hidden;
+    width: 55%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+section.skills figure img {
+    /* height: 100%; */
+}
+
+section.skills .duo p.p {
+    width: 80%;
+    margin: 0 auto;
+    color: #7e7e7e;
+    font-size: .9rem;
+}
+
+.stack .column {
+    max-width: 135px;
+    text-align: center;
+    margin: 0 1em;
+}
+
+.stack .column h4 {
+    font-size: 0.9rem;
+}
+
+.stack .column figure {
+    width: 60px;
+    margin: 1em auto;
+}
+
+.stack .column figure img {
+    mix-blend-mode: luminosity;
+    opacity: .5;
+}
+
+.stack .column:hover figure img {
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.content.stack figure:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.skills .bio {
+    text-align: center;
+    margin: 40px auto;
+    font-size: .9rem;
+    line-height: 1.6rem;
+}
+
+section#contact-me .hire-me {
+    border-radius: 30px;
+    background-color: #0a0e24;
+    color: #fff;
+    padding: 2.2rem 1.8rem;
+}
+
+section#contact-me .hire-me h1,
+section#contact-me .hire-me a,
+section#contact-me .hire-me h2 {
+    color: #fff;
+}
+
+section#contact-me .hire-me .button.is-primary {
+    border-color: #fff;
+}
+
+section#contact-me .hire-me .button.is-primary.is-outlined:hover {
+    background-color: #fff;
+    color: #0a0e24;
+}
+
+footer.section {
+    margin-top: -60px;
+    background-color: #274afa;
+    padding-top: 100px;
+}
+
+footer.section .contain {
+    margin-top: 2rem;
+}
+
+footer .social-icons {
+    margin: 1rem auto 2rem;
+}
+
+.social-icons .field a {
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 0 .55rem;
+}
+
+footer.section h1.title {
+    color: #fff;
+}
+
+footer.section .made-by-bulma small {
+    letter-spacing: 2px;
+    color: #fff;
+    opacity: .3;
+}
